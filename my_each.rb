@@ -4,7 +4,6 @@ def my_each (array)
     block_given?
     yield(array[i])
     i = i + 1
-    end
   end
   array
 end
