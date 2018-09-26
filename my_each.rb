@@ -8,6 +8,8 @@ def my_each (array)
       end
 end
 
+def eachmethod()
+
 def hello_t(array)
   if block_given?
     i = 0
@@ -23,9 +25,6 @@ def hello_t(array)
   end
 end
 
-# call your method here!
-hello_t(["Tim", "Tom", "Jim"]) do |name|
-  if name.start_with?("T")
-    puts "Hi, #{name}"
-  end
+hello_t([arr]) do |num|
+  puts num
 end
